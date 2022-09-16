@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "7340675014",
+    "project_id": "blissme-7e7f2",
+    "storage_bucket": "blissme-7e7f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7340675014:android:f816d6b0ff7a39bd5e6cc7",
+        "android_client_info": {
+          "package_name": "com.example.blissme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7340675014-79ppk1hbal0586j3er5g9eq515d3qio8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.blissme",
+            "certificate_hash": "e6caac17c450e5423b64c7540290cec5a8a93cd8"
+          }
+        },
+        {
+          "client_id": "7340675014-k5h5bhbb8ss49f32vikrmq5t2vomg9l2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEGvW_5q2JBVKQypumq4EbVFd7m_ToC34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7340675014-k5h5bhbb8ss49f32vikrmq5t2vomg9l2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

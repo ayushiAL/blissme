@@ -11,6 +11,7 @@ class JwtLogInScreen extends StatefulWidget {
 class _JwtLogInScreenState extends State<JwtLogInScreen> {
 
    AuthController authController=AuthController();
+   // final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +46,7 @@ class _JwtLogInScreenState extends State<JwtLogInScreen> {
                   fillColor: Color(0xffF8F8F8)),
             ),
             ElevatedButton(onPressed: (){
-              authController.loginUser();
+              authController.loginUser(context,);
             }, child: Text("LogIn",style: TextStyle(color: Colors.black),),style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color(0xffF8F8F8))),)
           ],
         ),

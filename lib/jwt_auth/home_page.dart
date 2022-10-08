@@ -1,19 +1,40 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
+import 'auth_controller.dart';
+
+class HomePage1 extends StatefulWidget {
   final String text;
-  const HomePage({Key? key, required this.text}) : super(key: key);
+
+  const HomePage1({Key? key, required this.text}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<HomePage1> createState() => _HomePage1State();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePage1State extends State<HomePage1> {
+  AuthController authController=AuthController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text(""),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: Text(widget.text),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              authController.userData(context);
+            },
+            child: Text(
+              "GetUserData",
+              style: TextStyle(color: Colors.black),
+            ),
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Color(0xffF8F8F8))),
+          )
+        ],
       ),
     );
   }
